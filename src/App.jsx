@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./scss/index.scss";
 
 import {
@@ -15,8 +15,9 @@ import {
 } from "./components";
 
 const App = () => {
+  const [theme, setTheme] = useState("dark");
   return (
-    <div className="app">
+    <div className="app" data-theme={theme}>
       <h2>Hello, World!</h2>
       <ScrollToTop />
       <NavBar />
