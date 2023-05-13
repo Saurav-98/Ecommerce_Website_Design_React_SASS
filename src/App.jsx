@@ -18,10 +18,10 @@ const App = () => {
   const [theme, setTheme] = useState("dark");
   return (
     <div className="app" data-theme={theme}>
-      <h2>Hello, World!</h2>
-      <ScrollToTop />
+      {/* <h2>Hello, World!</h2> */}
       <NavBar />
       <Home />
+      <ScrollToTop />
       <Services />
       <Categories />
       <Recommend />
